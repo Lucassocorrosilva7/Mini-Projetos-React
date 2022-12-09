@@ -1,5 +1,6 @@
 import Image from "../assets/images/lucas.png"
-import "./Modal.less"
+import "./modal.less"
+import { FaLinkedinIn, FaGithubAlt, FaTerminal } from "react-icons/fa"
 
 const Modal = ({ open, onClose }) => {
     if (!open) return null;
@@ -26,9 +27,9 @@ const Modal = ({ open, onClose }) => {
                             <p>Sejam bem-vindos ao meu simples modal, desenvolvido com React e Less!!!</p>
                         </div>
                         <div className="content__texts--links">
-                            <a href="http://">1</a>
-                            <a href="http://">2</a>
-                            <a href="http://">3</a>
+                            <a href="https://www.linkedin.com/in/luquinhasssilva/" target="_blank"><FaLinkedinIn size={25} color="#c1ffd7"/></a>
+                            <a href="https://github.com/Lucassocorrosilva7" target="_blank"><FaGithubAlt size={25} color="#c1ffd7"/></a>
+                            <a href="https://lucas-bio.netlify.app/" target="_blank"><FaTerminal size={25} color="#c1ffd7"/></a>
                         </div>
                     </div>
                 </div>

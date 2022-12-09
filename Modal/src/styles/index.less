@@ -1,0 +1,45 @@
+@import "./variables.less";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+button{
+  cursor: pointer; 
+  outline: none;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  button{
+    background-color: @bg-secondary;
+    color: @bg-primary;
+    text-transform: capitalize;
+    border: solid 2px @bg-primary-dark;
+    box-shadow: 4px 4px @bg-primary-dark;
+    transition: transform 50ms, box-shadow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+
+    &:hover {
+        transform: translate(2px, 2px);
+        box-shadow: 2px 2px @bg-primary-dark;
+      }
+  }
+}
